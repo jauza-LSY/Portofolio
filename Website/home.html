@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="/bootstrap/css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg topbar mb-4 static-top shadow"> 
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">  
+                <li>
+                    <a class="logo">Jauza Wijdaniah</a>
+                </li>
+                <li style="float:right;margin-right:30px;">
+                    <a class="nav-link" href="#footer">Contact</a>
+                </li>
+                <li style="float:right">
+                    <a class="nav-link" href="#projects">Project</a>
+                </li>
+                <li style="float:right">
+                    <a class="nav-link" href="#content">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav> 
+      
+<section id="content">
+    <h1>Welcome to My Website</h1>
+    <p>This is a simple portfolio</p>
+    <a href="cv.pdf" class="btn-cv" target="_blank">My CV</a>
+</section> 
+
+<section id="projects">
+    <h1>Projects</h1>
+    <div class="project-gallery">
+        <div class="project">
+            <img src="ft1.png" alt="Project 1">
+            <div class="description">Website E-Commerce Logitech</div>
+        </div>
+        <div class="project">
+            <img src="ft2.png" alt="Project 2">
+            <div class="description">Website Sekola SMK Negeri 1 Gunung Putri</div>
+        </div>
+        <div class="project">
+            <img src="ft3.png" alt="Project 3">
+            <div class="description">Website Game Secret Neighbor</div>
+        </div>
+    </div>
+</section> 
+
+<section id="footer"></section>
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/jauzaw._?igsh=azVrOHBrMGIwbjk=" target="_blank"><img src="ig.jpg" alt="Instagram" /></a>
+            <a href="https://wa.me/6282248765577" target="_blank"><img src="wa.jpg" alt="WhatsApp" /></a>
+            <a href="https://youtube.com/@jauzawijdaniah1431?si=QAftYwnmxRAe4wg9" target="_blank"><img src="yt.jpg" alt="YouTube" /></a>
+        </div>
+        <p>Copyright By Jauza Wijdaniah<br>
+            <a href="jauza2546@gmail.com">jauza2546@gmail.com</a>
+        </p>
+    </footer>
+</section>
+
+<div id="pointer"></div>
+    
+<script src="/bootstrap/js"></script>
+<script>
+    document.querySelectorAll('a.nav-link').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+</body>
+</html>
